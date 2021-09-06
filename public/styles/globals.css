@@ -1,0 +1,24 @@
+@import './home.css';
+@import './form.css';
+
+
+.black-ghost-mask {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #2d2d2d;
+    opacity: .5;
+}
+
+.jumbotron {
+    padding: 2rem 10rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.jumbotron h1 {
+    font-size: 5rem;
+}

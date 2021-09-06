@@ -1,0 +1,17 @@
+#home-video {
+    height: calc(100vh - 60px);
+    position: relative;
+}
+
+#home-video video {
+    right: 0; 
+    bottom: 0;
+    position: absolute;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    background-size: cover;
+    overflow: hidden;
+    z-index: 0;
+}

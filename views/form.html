@@ -7,34 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/globals.css">
     <title>Formulario</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Porsche Carrerra 992</a>
+            <a class="navbar-brand" href="#">Porsche</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
-                    <a class="nav-link active" aria-current="page" href="/form">Form</a>
+                    <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="/form">Solicitud</a>
                 </div>
             </div>
         </div>
     </nav>
     <section>
-        <div class="container">
-            <div class="row">
-                <h2>Apply to purchase</h2>
+        <div class="container-fluid d-flex justify-content-center" id="hero-header">
+            <div class="header-content row">
+                <div class="header-title m-auto text-center">
+                    <h1 class="text-white">Reserva Ahora</h1>
+                </div>
+            </div>
+            <div id="form-header-bg"></div>
+            <div class="black-ghost-mask"></div>
+        </div>
+        <div class="container pb-5">
+            <div class="row mt-5">
+                <h2>Solicitud de compra</h2>
             </div>
             <form>
                 <div class="row">
                     <div class="form-group col-lg-6 col-sm-12">
-                        <label for="inputName">Name</label>
+                        <label for="inputName">Nombre</label>
                         <input type="text" class="form-control" id="inputName" placeholder="Name">
                     </div>
                     <div class="form-group col-lg-6 col-sm-12">
@@ -42,43 +52,49 @@
                         <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mt-3">
                     <div class="form-group col-lg-6 col-sm-12">
-                        <label for="inputAddress">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        <label for="inputAddress">Calle</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Pirules 4">
                     </div>
                     <div class="form-group col-lg-6 col-sm-12">
-                        <label for="inputAddress2">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2"
-                            placeholder="Apartment, studio, or floor">
+                        <label for="inputAddress2">Colonia</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Club de golf chiluca">
                     </div>
                 </div>
-                <div class="form-row">
+                <div class="row mt-3">
                     <div class="form-group col-lg-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                        <label for="inputCity">Ciudad/Muncipio</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Atizapán">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
+                        <label for="inputState">Estado</label>
                         <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
+                            <option selected>Selecciona...</option>
+                            <option>Estado de México</option>
+                            <option>CDMX</option>
+                            <option>Puebla</option>
+                            <option>Querétaro</option>
+                            <option>Morelos</option>
                         </select>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="inputZip">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <label for="inputZip">Código Postal</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="53110">
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Check me out
-                        </label>
+                <div class="mt-2">
+                    <div class="form-group mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Acepto términos y condiciones
+                            </label>
+                        </div>
                     </div>
+                    <button type="reset" class="btn btn-secondary">Reiniciar</button>
+                    <button type="submit" class="btn btn-primary">Reservar</button>
                 </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
             </form>
         </div>
     </section>
