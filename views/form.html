@@ -41,35 +41,35 @@
             <div class="row mt-5">
                 <h2>Solicitud de compra</h2>
             </div>
-            <form>
+            <form method="GET">
                 <div class="row">
                     <div class="form-group col-lg-6 col-sm-12">
                         <label for="inputName">Nombre</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        <input type="text" class="form-control" id="inputName" name="name" placeholder="Name">
                     </div>
                     <div class="form-group col-lg-6 col-sm-12">
                         <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
                     </div>
                 </div>
                 <div class="row mt-3">
                     <div class="form-group col-lg-6 col-sm-12">
                         <label for="inputAddress">Calle</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Pirules 4">
+                        <input type="text" class="form-control" id="inputAddress" name="street" placeholder="Pirules 4">
                     </div>
                     <div class="form-group col-lg-6 col-sm-12">
                         <label for="inputAddress2">Colonia</label>
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Club de golf chiluca">
+                        <input type="text" class="form-control" id="inputAddress2" name="suburb" placeholder="Club de golf chiluca">
                     </div>
                 </div>
                 <div class="row mt-3">
                     <div class="form-group col-lg-6">
                         <label for="inputCity">Ciudad/Muncipio</label>
-                        <input type="text" class="form-control" id="inputCity" placeholder="Atizapán">
+                        <input type="text" class="form-control" id="inputCity" name="city" placeholder="Atizapán">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputState">Estado</label>
-                        <select id="inputState" class="form-control">
+                        <select id="inputState" name="state" class="form-control">
                             <option selected>Selecciona...</option>
                             <option>Estado de México</option>
                             <option>CDMX</option>
@@ -80,13 +80,13 @@
                     </div>
                     <div class="form-group col-md-2">
                         <label for="inputZip">Código Postal</label>
-                        <input type="text" class="form-control" id="inputZip" placeholder="53110">
+                        <input type="text" name="zipcode" class="form-control" id="inputZip" placeholder="53110">
                     </div>
                 </div>
                 <div class="mt-2">
                     <div class="form-group mb-3">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" name="privacyPolicy">
                             <label class="form-check-label" for="gridCheck">
                                 Acepto términos y condiciones
                             </label>
